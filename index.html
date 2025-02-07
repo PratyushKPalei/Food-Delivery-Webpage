@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Food Delivery Service</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Today's Menu</h2>
+        <div class="menu-item">
+            <img src="burger.jpg" alt="Burger">
+            <h3>Classic Burger</h3>
+            <p>$5.99</p>
+            <button onclick="addToCart('Classic Burger', 5.99)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="pizza.jpg" alt="Pizza">
+            <h3>Cheese Pizza</h3>
+            <p>$7.99</p>
+            <button onclick="addToCart('Cheese Pizza', 7.99)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="pasta.jpg" alt="Pasta">
+            <h3>Spaghetti Pasta</h3>
+            <p>$6.49</p>
+            <button onclick="addToCart('Spaghetti Pasta', 6.49)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-display"></div>
+        <p id="total-price">Total: $0.00</p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <footer>
+        <p>© 2025 Food Delivery Service</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
